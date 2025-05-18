@@ -1,0 +1,22 @@
+
+
+{% extends "journal/navbar.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<br>
+
+<div class="container bg-white shadow-md p-5 form-layout" >
+
+<h2> {{ user }}</h22> 
+
+<br>
+
+<p> Welcome, {{user}}! This is your dashboard. </p>
+
+<img src="{{profilePic.profile_pic.url}}">
+
+</div>
+
+{% endblock %}
